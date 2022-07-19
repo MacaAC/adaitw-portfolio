@@ -3,6 +3,7 @@ body{
     height: 100%;
     font-family: 'Merriweather', serif;
 font-family: 'Roboto Condensed', sans-serif;
+
 }
 ul{flex-direction: row;
 display: flex;
@@ -104,7 +105,7 @@ button:hover{
 
 }
 
-.seccion_dos{
+#conocimiento{
     display: flex;
     
     flex-direction: column;
@@ -171,17 +172,17 @@ button:hover{
 #proyecto{
     text-align: center;
 }
-.proyecto_titulo{
+#proyecto h1{
     font-size: 40px;
 }
-.proyecto_texto{
+#proyecto p{
     text-align: center;
     width: 500px;
     margin: 0 auto;
     font-size: 20px;
 
 }
-.boton-container{
+.contenedor_botones{
     display: flex;
     flex-wrap: wrap;
     margin-left: 100px;
@@ -191,7 +192,7 @@ button:hover{
 
 }
 
-.cuadro{
+.contenedor_botones button{
     width: 300px;
     height: 300px;
     margin-left: 48px;
@@ -204,11 +205,11 @@ button:hover{
     
 
 }
-.cuadro:hover{
+.contenedor_botones button:hover{
     border: 1px solid blueviolet;
 
 }
-.cuadro:hover .epigrafe{
+.contenedor_botones button:hover .epigrafe{
     color: blueviolet;
 }
 .div_img{
@@ -234,7 +235,7 @@ text-align: center;
     padding-top: 40px;
     
 }
-.last-div{
+.caja_contacto_formulario{
 
     margin-top: 40px;
     border-radius: 25px;
@@ -243,120 +244,26 @@ text-align: center;
     display: flex;
   
 }
-.contactame{
+.caja_contactame{
     text-align: left;   
     width: 40%;
     height: 500px;
     margin-left: 80px;
     margin-right: 80px;
+    
 }
-.escribeme{
-    text-align: justify;
-    width: 40%;
-    height: 500px;
-    margin: 10px;
+.caja_contactame h1{
+    font-size: 35px;
+}
+.caja_contactame p{
 
-}
-.lorem{
     width: 400px;
     font-size: 18px;
     font-weight: lighter;
 }
-.title{
-    font-size: 35px;
-}
-form{
-    font-size: 25px;
-}
-.nombre{
+.b_botones{
     display: flex;
     
-}
-.nombre input{
-    height: 40px;
-    width: 200px;
-    border-radius: 15px;
-    background-color: rgb(236, 228, 228);
-    border: none;
-    margin: 15px;
-}
-.amarillo input{
-    height: 40px;
-    width: 450px;
-    border-radius: 15px;
-    background-color: rgb(236, 228, 228);
-    border: none;
-    
-}
-textarea{
-    height: 200px;
-    width: 450px;
-    border-radius: 15px;
-    background-color: rgb(236, 228, 228);
-    border: none;
-}
-.enviar input{
-    border-radius: 15px;
-    background-color: blueviolet;
-    color: white;
-    font-weight: bold;
-    border: none;
-    height: 30px;
-    width: 150px;
-    margin-bottom: 20px;
-
-}
-.enviar input:hover{
-    box-shadow: 0 0 20px blueviolet;
-
-
-}
-textarea::placeholder{
-    margin-top: 10px;
-}
-.maca div{
-    display: flex;
-}
-.maca button{
-    width: 40px;
-    height: 40px;
-}
-footer{
-    background-color: blueviolet;
-    color: white;
-}
-.pie{
-    display: flex;
-    justify-content: center;
-}
-.pieiconos{
-    display: flex;
-    justify-content: center;
-}
-.pieiconos button{
-    border-radius: 50%;
-    background-color: white;
-    height: 60px;
-    width: 60px;
-    border: none;
-    margin: 10px;
-}
-.pieiconos button:hover{
-    border-radius: 50%;
-    border:1px solid white;
-    background-color: blueviolet;
-}
-.pieiconos i:hover{
-    color: white;
-}
-.pieiconos i{
-    font-size: 30px;
-
-    color: blueviolet;
-}
-
-.b-botones{
-    display: flex;
 }
 .botones{
     
@@ -383,12 +290,113 @@ footer{
 .botones i:hover{
     color: white;
 }
-#mail i{
-margin-left: -63px;
-}
 .botones p{
     margin-left:25px ;    
 }
+
+.escribeme{
+    text-align: justify;
+    width: 40%;
+    height: 500px;
+    margin: 10px;
+
+}
+
+form{
+    font-size: 25px;
+}
+.nombre_div{
+    display: flex;
+    
+}
+.nombre_div input{
+    height: 40px;
+    width: 200px;
+    border-radius: 15px;
+    background-color: rgb(236, 228, 228);
+    border: none;
+    margin: 15px;
+}
+.mail_div input{
+    height: 40px;
+    width: 450px;
+    border-radius: 15px;
+    background-color: rgb(236, 228, 228);
+    border: none;
+    
+}
+textarea{
+    height: 200px;
+    width: 450px;
+    border-radius: 15px;
+    background-color: rgb(236, 228, 228);
+    border: none;
+}
+.enviar_div input{
+    border-radius: 15px;
+    background-color: blueviolet;
+    color: white;
+    font-weight: bold;
+    border: none;
+    height: 30px;
+    width: 150px;
+    margin-bottom: 20px;
+
+}
+.enviar_div input:hover{
+    box-shadow: 0 0 20px blueviolet;
+
+
+}
+textarea::placeholder{
+    margin-top: 10px;
+}
+.maca div{
+    display: flex;
+}
+.maca button{
+    width: 40px;
+    height: 40px;
+}
+footer{
+    background-color: blueviolet;
+    color: white;
+}
+.pie{
+    display: flex;
+    justify-content: center;
+}
+.pie_iconos{
+    display: flex;
+    justify-content: center;
+}
+.pie_iconos button{
+    border-radius: 50%;
+    background-color: white;
+    height: 60px;
+    width: 60px;
+    border: none;
+    margin: 10px;
+}
+.pie_iconos button:hover{
+    border-radius: 50%;
+    border:1px solid white;
+    background-color: blueviolet;
+}
+.pie_iconos i:hover{
+    color: white;
+}
+.pie_iconos i{
+    font-size: 30px;
+
+    color: blueviolet;
+}
+
+
+#mail i{
+margin-left: -63px;
+}
+
 .firma{
     display: flex;
     justify-content: center;
