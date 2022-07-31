@@ -424,7 +424,7 @@ margin-left: -63px;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 36rem;
+        width: 24rem;
         margin: 0 ;
         
     }
@@ -437,39 +437,38 @@ margin-left: -63px;
     }
 
     .portada{
-        margin: 0;
-        width: 36rem;
+       margin: 0;
+        width: 18rem;
         text-align: center;
     }
     
     .seccion_presentacion h2{
-        font-size: 3rem;    
+        font-size: 2.4rem;    
         margin-bottom: -1rem;
     }
     
     .seccion_presentacion h1{
-        font-size: 5rem;  
+        font-size: 3.2rem;  
         margin-bottom: -2rem;
     }
     
     .seccion_presentacion p{
-        font-size: 2rem;
+        font-size: 1.5rem;
         margin-top: 3rem;
     }
     
     .seccion_presentacion button{
         border-radius: 1.5rem;
-        height: 4 rem;
-        width: 16rem;
-        font-size: 2rem;
+        height: 2 rem;
+        width: 12rem;
+        font-size: 1.2rem;
         padding: 0.3rem;
     }
     /*Media sección de habilidades*/
     #conocimiento{
         margin-top: 5rem;
-        width: 18rem;
-        margin: 0 0 0 -1rem;
-        
+        width: 24rem;
+        margin: 0 ;     
         
     }
     
@@ -501,9 +500,9 @@ margin-left: -63px;
     /*media para la sección de la cita*/
     
     .seccion_cita{
-        margin: 8rem 0 0 -1rem;
+        margin: 8rem 0 0 0;
         height: 40rem;
-        width: 18rem;
+        width: 25rem;
     }
     .seccion_cita i{
         text-align: center;
@@ -521,8 +520,8 @@ margin-left: -63px;
     }
     /*media sección proyectos*/
     #proyecto{
-        margin: 3rem 0 0 -1rem;
-        width: 18rem;
+        margin: 3rem 0 0 0;
+        width: 25rem;
         align-items: center;
         justify-content: center;
     }
@@ -553,7 +552,7 @@ margin-left: -63px;
     }
     /*media sección de contacto*/
     #contacto{
-        width: 18rem;
+        width: 25rem;
         display: flex;
         justify-content: center;
         height: 80rem;
@@ -567,7 +566,7 @@ margin-left: -63px;
      /*Aquí el código del formulario de contacto*/
      .formulario{
 
-        width:17rem;
+        width:20rem;
         height: 70rem;
         display: flex;
         flex-direction: column;
@@ -614,6 +613,13 @@ margin-left: -63px;
   
     .pie{
         display: none;
+    }
+    footer{
+        width: 25rem;
+    
+    }
+    .caja_botones_enlaces{
+        width: 25rem;
     }
     .caja_botones_enlaces button{
         width: 2.5rem;
