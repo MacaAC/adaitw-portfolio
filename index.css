@@ -248,6 +248,7 @@ button:hover{
     margin: 35px 70px 35px 70px;
     background-color: white;
     display: flex;
+    
 }
 
 .caja_contactame{
@@ -303,12 +304,7 @@ button:hover{
     margin-left:25px ;    
 }
  /*Aquí el código del formulario de contacto*/
-.escribeme{
-    text-align: justify;
-    width: 40%;
-    height: 500px;
-    margin: 10px;
-}
+
 
 .formulario h1{
     font-size: 35px;
@@ -317,11 +313,11 @@ button:hover{
 form{
     font-size: 25px;
 }
-.nombre_div{
+.nombre_caja{
     display: flex;
     
 }
-.nombre_div input{
+.nombre_caja input{
     height: 40px;
     width: 200px;
     border-radius: 15px;
@@ -329,7 +325,7 @@ form{
     border: none;
     margin: 15px;
 }
-.mail_div input{
+.mail_caja input{
     height: 40px;
     width: 450px;
     border-radius: 15px;
@@ -344,7 +340,7 @@ textarea{
     background-color: rgb(236, 228, 228);
     border: none;
 }
-.enviar_div input{
+.enviar_caja input{
     border-radius: 15px;
     background-color: blueviolet;
     color: white;
@@ -355,7 +351,7 @@ textarea{
     margin-bottom: 20px;
 
 }
-.enviar_div input:hover{
+.enviar_caja input:hover{
     box-shadow: 0 0 20px blueviolet;
 
 
@@ -413,201 +409,221 @@ margin-left: -63px;
     display: flex;
     justify-content: center;
 }
-@media  (max-width:1100px) {
+
+@media (max-width:400px){
+    html{ 
+        font-size: 10px;
+        width: 360px;
+        display: flex;
+    }
     nav{
         display: none;
     }
-    .seccion_uno img{
-        margin: 0 auto;
-        width: 500px;
-        display: flex;
-        justify-content: center;
-    }
-   
-    .seccion_uno{
-        width: 100%;
+    .seccion_presentacion{
         display: flex;
         flex-direction: column;
-    }
-    
-    .hola{
-       text-align: center;
-       width: 500px;
-       margin-left: auto;
-       margin-right: auto;
-       
-       }
-    .nombre input{
-        height: 40px;
-        width: 120px;
-       
-    }
-    .amarillo input{
-        height: 40px;
-        width: 300px;
+        align-items: center;
+        justify-content: center;
+        width: 36rem;
+        margin: 0 0 0 -1rem;
         
     }
-    textarea{
-        height: 200px;
-        width: 300px;
-       
+    
+    .seccion_presentacion .imagen{
+        height:18rem ;
+        width: 18rem ;
+        margin: 0;
+      
+    }
+
+    .portada{
+        margin: 0;
+        width: 36rem;
+        text-align: center;
+    }
+    
+    .seccion_presentacion h2{
+        font-size: 3rem;    
+        margin-bottom: -1rem;
+    }
+    
+    .seccion_presentacion h1{
+        font-size: 5rem;  
+        margin-bottom: -2rem;
+    }
+    
+    .seccion_presentacion p{
+        font-size: 2rem;
+        margin-top: 3rem;
+    }
+    
+    .seccion_presentacion button{
+        border-radius: 1.5rem;
+        height: 4 rem;
+        width: 16rem;
+        font-size: 2rem;
+        padding: 0.3rem;
+    }
+    /*Media sección de habilidades*/
+    #conocimiento{
+        margin-top: 5rem;
+        width: 18rem;
+        margin: 0 0 0 -1rem;
+        
+        
+    }
+    
+    #conocimiento p{
+        text-align: center;
+        width: 10rem;
+    }
+    
+    .b-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .b-container button{
+        height: 15rem;
+        width: 15rem;
+        margin: 1rem;
+    }
+
+    .fa-brands{
+        font-size: 8rem;    
+    }
+    .fa-solid{
+        font-size: 8rem;
+        
+    }
+    
+    /*media para la sección de la cita*/
+    
+    .seccion_cita{
+        margin: 8rem 0 0 -1rem;
+        height: 40rem;
+        width: 18rem;
+    }
+    .seccion_cita i{
+        text-align: center;
+    }
+    .seccion_cita p{
+        font-size: 1.2rem;
+        color: white;
+        width: 17rem;
+    }
+    
+    .seccion_cita span{
+        color: white;
+        font-weight: bolder;
+        font-size: 1.5rem;
+    }
+    /*media sección proyectos*/
+    #proyecto{
+        margin: 3rem 0 0 -1rem;
+        width: 18rem;
+        align-items: center;
+        justify-content: center;
+    }
+    #proyecto h1{
+        font-size: 2.7rem;
+            }
+    #proyecto p{
+        font-size: 1.3rem;
+        width: 16rem;
     }
    
-    textarea::placeholder{
-        margin-top: 10px;
+    .contenedor_botones{
+        flex-direction: column;
+        align-items: center;
     }
-    .n{
-        width: 200px;
-        height: 200px;
-       
+    .contenedor_botones button{
+        width: 15rem;
+        height: 25rem;
+        margin: 1rem; 
     }
-    .div_img{
-        width: 100px;
+    .contenedor_botones button img{
+        width: 10rem;
+        height: 10rem;
     }
-    .imagen{
-        margin: 0 auto;
+    .contenedor_botones .epigrafe{
+        font-size: 1.5rem;
+        width: 11rem;
     }
-    .epigrafe{
-        margin-top: 10px;
-        font-size: 15px;
-
-    }
-
+    /*media sección de contacto*/
+    #contacto{
+        width: 18rem;
+        display: flex;
+        justify-content: center;
+        height: 80rem;
     
-}
-@media (min-width:800px) and (max-width:965px){
-    body{
-        width: 100%;
+    
     }
-    .portada{
+    .caja_contactame{
+        display: none;
+    }
+
+     /*Aquí el código del formulario de contacto*/
+     .formulario{
+
+        width:17rem;
+        height: 70rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        border-radius: 1.5rem;
+        margin: 2rem 1 rem ;       
+        
+     }
+     .formulario h1{
+        font-size: 2rem;
+     }
+    .nombre_caja{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nombre_caja p, .mail_caja p{
+        font-size: 1.7rem;
+    }
+    .encabezado_mensaje {
+        font-size: 1.7rem;
+    }
+    .nombre_caja input, .mail_caja input{
+        width: 14rem;
+
+    }
+    .mail_caja input{
+        margin-left: 1.3rem;
+    }
+    textarea{
+        width:14rem;
+        height: 10rem;
+        margin-left: 1.3rem;
+    }
+    .enviar_caja{
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
-
+        
         
     }
-    .seccion_uno{
-        display: flex;
-        justify-content: center;
-    }
-        
-    .contenedor_botones button{
-        width: 200px;
-        height: 200px;        
-    }
-    .contenedor_botones{
-        
-        padding-left: 80px;
-    }
-    #contacto{
-        height: 1500px;
-    }
-    .caja_contacto_formulario{
-        display: flex;
-        flex-direction: column;
-        background-color:rgb(230, 223, 223); 
-        
-
-    }
-    .caja_contactame{
-        padding-left: 75px;
-        border-radius: 15px;
-        margin-bottom: 50px;
-        background-color: white;
-        width: 600px;
-        margin-left: 0%;
-        padding-left: 100px
-        
-        ;
-    }
-
-   .formulario{
-    width: 600px;
-    margin-top: 50px;
-    border-radius: 15px;
-    background-color: white;
-    padding-top: 35px;
-    padding-bottom: 35px;
-    padding-left: 100px;
-   }
-   textarea{
-    width: 450px;
-
-   }
-}
-@media (min-width:481) and (max-width:800px) {
-    nav{
+  
+    .pie{
         display: none;
     }
-    .seccion_uno{
-        display: flex;
-        flex-direction: column;
+    .caja_botones_enlaces button{
+        width: 2.5rem;
+        height: 2.5rem;
     }
-    .hola{
-       text-align: center;
-    }
-    .contenedor_botones button{
-        width: 200px;
-        height: 200px;        
-    }
-    .seccion_tres p{
-        font-size: 15px;
-        width: 600px;
-    }
-    #contacto{
-        height: 1500px;
-    }
-    .caja_contacto_formulario{
-        display: flex;
-        flex-direction: column;
-        background-color:rgb(230, 223, 223); 
-        
+    .caja_botones_enlaces  i{
+
+        font-size: 1.4rem;
 
     }
-    .caja_contactame{
-        padding-left: 75px;
-        border-radius: 15px;
-        margin-bottom: 50px;
-        background-color: white;
-        width: 90%;
-        margin-left: 0%;
-        padding-left: 100px
-        
-        ;
-    }
-
-   .formulario{
-    width: 90%;
-    margin-top: 50px;
-    border-radius: 15px;
-    background-color: white;
-    padding-top: 35px;
-    padding-bottom: 35px;
-    padding-left: 100px;
-   }
-   textarea{
-    width: 450px;
-
-   }
-
+}
     
     
-}
-@media screen and (max-width:480px) {
-    .portada{text-align: center;
-    margin-left: 0;}
-    .portada h2{
-        font-size: 30px;
-    }
-   .portada h1{
-    font-size: 50px;
-   }
-   .portada p{
-    font-size: 20px;
-   }
-   
-}
-@media screen and (max-width:300px) {
-    
-}
