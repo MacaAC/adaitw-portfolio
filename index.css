@@ -414,13 +414,8 @@ footer {
 @media (min-width: 1200px) {
 }
 
-/* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) {
-}
 
-/* Landscape phone to portrait tablet */
-@media (max-width: 767px) {
-}
+
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
@@ -435,7 +430,7 @@ footer {
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      width: 27rem;
+      width: 100%;
       margin: 0;
     }
 
@@ -443,6 +438,7 @@ footer {
       height: 18rem;
       width: 18rem;
       margin: 0;
+      
     }
 
     .portada {
@@ -476,32 +472,33 @@ footer {
     /*Media sección de habilidades*/
     #conocimiento {
       margin-top: 5rem;
-      width: 27rem;
+      width: 100%;
       margin: 0;
     }
 
     #conocimiento p {
       text-align: center;
-      width: 10rem;
+      width: 20rem;
     }
 
     .b-container {
       display: flex;
       flex-direction: column;
       justify-content: center;
+      align-items: center;
     }
 
     .b-container button {
-      height: 15rem;
-      width: 15rem;
+      height: 10rem;
+      width: 10rem;
       margin: 1rem;
     }
 
     .fa-brands {
-      font-size: 8rem;
+      font-size: 3rem;
     }
     .fa-solid {
-      font-size: 8rem;
+      font-size: 3rem;
     }
 
     /*media para la sección de la cita*/
@@ -509,7 +506,7 @@ footer {
     .seccion_cita {
       margin: 8rem 0 0 0;
       height: 40rem;
-      width: 27rem;
+      width: 100%;
     }
     .seccion_cita i {
       text-align: center;
@@ -528,7 +525,7 @@ footer {
     /*media sección proyectos*/
     #proyecto {
       margin: 3rem 0 0 0;
-      width: 27rem;
+      width: 100%;
       align-items: center;
       justify-content: center;
     }
@@ -559,10 +556,14 @@ footer {
     }
     /*media sección de contacto*/
     #contacto {
-      width: 27rem;
+      width: 100%;
       display: flex;
       justify-content: center;
       height: 80rem;
+    }
+    .caja_contacto_formulario{
+        width: 100%;
+        background-color: rgb(230, 223, 223);
     }
     .caja_contactame {
       display: none;
@@ -570,7 +571,7 @@ footer {
 
     /*Aquí el código del formulario de contacto*/
     .formulario {
-      width: 20rem;
+      width: 90%;
       height: 70rem;
       display: flex;
       flex-direction: column;
@@ -617,7 +618,7 @@ footer {
       display: none;
     }
     footer {
-      width: 27rem;
+      width: 100%;
     }
     .caja_botones_enlaces {
       width: 25rem;
@@ -630,3 +631,239 @@ footer {
       font-size: 1.4rem;
     }
   }
+/* Landscape phone to portrait tablet */
+@media (min-width:481px) and (max-width: 767px) {
+    html {
+        font-size: 20px;
+      }
+      nav {
+        display: none;
+      }
+      .seccion_presentacion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+        
+      }
+  
+      .seccion_presentacion .imagen {
+        height: 18rem;
+        width: 20rem;
+        margin: 0;
+        
+      }
+      
+  
+      .portada {
+        margin: 0;
+        width: 25rem;
+        text-align: center;
+      }
+  
+      .seccion_presentacion h2 {
+        font-size: 2.4rem;
+        margin-bottom: -1rem;
+      }
+  
+      .seccion_presentacion h1 {
+        font-size: 3.2rem;
+        margin-bottom: -2rem;
+      }
+  
+      .seccion_presentacion p {
+        font-size: 1.5rem;
+        margin-top: 3rem;
+      }
+  
+      .seccion_presentacion button {
+        border-radius: 1.5rem;
+        height: 2.5 rem;
+        width: 10rem;
+        font-size: 1rem;
+        padding: 0.3rem;
+      }
+      /*Media sección de habilidades*/
+      #conocimiento {
+        margin-top: 5rem;
+        width: 100%;
+        margin: 0;
+      }
+  
+      #conocimiento p {
+        text-align: center;
+        width: 20rem;
+      }
+  
+      .b-container {
+        display: flex;
+        
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+  
+      .b-container button {
+        height: 6rem;
+        width: 6rem;
+        margin: 1rem;
+      }
+  
+      .fa-brands {
+        font-size: 3rem;
+      }
+      .fa-solid {
+        font-size: 3rem;
+      }
+  
+      /*media para la sección de la cita*/
+  
+      .seccion_cita {
+        margin: 3rem 0 0 0;
+        height: 15rem;
+        width: 100%;
+      }
+      .seccion_cita i {
+        text-align: center;
+        font-size: 3rem;
+      }
+      .seccion_cita p {
+        font-size: 0.8rem;
+        color: white;
+        width: 17rem;
+      }
+  
+      .seccion_cita span {
+        color: white;
+        font-weight: bolder;
+        font-size: 1rem;
+      }
+      /*media sección proyectos*/
+      #proyecto {
+        margin: 3rem 0 0 0;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+      }
+      #proyecto h1 {
+        font-size: 2rem;
+      }
+      #proyecto p {
+        font-size: 1rem;
+        
+      }
+  
+      .contenedor_botones {
+      
+        flex-wrap:wrap;
+      }
+      .contenedor_botones button {
+        width: 6rem;
+        height: 9rem;
+        margin: 0.5rem 1rem;
+      }
+      .contenedor_botones button img {
+        width: 4rem;
+        height: 4rem;
+      }
+      .contenedor_botones .epigrafe {
+        font-size: 0.6rem;
+        width: 6rem;
+      }
+  /*media sección de contacto*/
+  .caja_contacto_formulario{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(230, 223, 223);
+  }
+  #contacto {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 47rem;
+    padding: 1rem;
+  }
+  .caja_contactame {
+    display: none;
+  }
+
+  /*Aquí el código del formulario de contacto*/
+  .formulario {
+    width: 90%;
+    height: 45rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:white;
+    border-radius: 1.5rem;
+    
+
+  }
+  .formulario h1 {
+    font-size: 2rem;
+  }
+  .nombre_caja {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nombre_caja p,
+  .mail_caja p {
+    font-size: 1rem;
+  }
+  .encabezado_mensaje {
+    font-size: 1rem;
+  }
+  .nombre_caja input,
+  .mail_caja input {
+    width: 14rem;
+    height: 2.5rem;
+  }
+  .mail_caja input {
+    margin-left: 1.3rem;
+  }
+  textarea {
+    width: 14rem;
+    height: 10rem;
+    margin-left: 1.3rem;
+  }
+  .enviar_caja {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    
+  }
+.enviar_caja input{
+    height: 2rem;
+}
+/*Código para el diseño responsive del footer*/
+  .pie {
+    display: none;
+  }
+  footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .caja_botones_enlaces {
+    
+   max-width: 767px;
+  }
+  .caja_botones_enlaces button {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .caja_botones_enlaces i {
+    font-size: 1.4rem;
+  }    
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+}
