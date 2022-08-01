@@ -1,636 +1,632 @@
-body{
-    width: 100%;
-    height: 100%;
-    font-family: 'Merriweather', serif;
-    font-family: 'Roboto Condensed', sans-serif;
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Merriweather", serif;
+  font-family: "Roboto Condensed", sans-serif;
 }
-
 
 /*Aquí código del header con links de navegación*/
-nav{
-    width: 100%;
-    background-color: white;
-    display: flex;
-    justify-content: flex-end;
-    margin-top: -100px;
-    position: fixed;
-    box-shadow: 0 0 20px blueviolet;    
+nav {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -100px;
+  position: fixed;
+  box-shadow: 0 0 20px blueviolet;
 }
 
-nav a:hover{
-    color:blueviolet;
+nav a:hover {
+  color: blueviolet;
 }
 
-ul{
-    flex-direction: row;
-    display: flex;
-    list-style-type: none;
+ul {
+  flex-direction: row;
+  display: flex;
+  list-style-type: none;
 }
 
-li{   
-    margin:20px;
-    height:35px ;
-    display: flex;
-    align-items: center;
+li {
+  margin: 20px;
+  height: 35px;
+  display: flex;
+  align-items: center;
 }
 
-
-.enlace_contacto{
-    background-color: blueviolet;
-    height: 35px;
-    width: 120px;
-    border-radius: 15px;    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;   
+.enlace_contacto {
+  background-color: blueviolet;
+  height: 35px;
+  width: 120px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
 
-a{
-    text-decoration: none; 
-    color: black;
+a {
+  text-decoration: none;
+  color: black;
 }
 
 /*Aquí está elcódigo para la sección de presentación*/
 
-.seccion_presentacion{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 100px;
+.seccion_presentacion {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 100px;
 }
-.seccion_presentacion .imagen{
-    height: 500px;
-    width: 500px;
-    margin-right: 150px;
-    margin-top: 100px;
-}
-
-.seccion_presentacion img{
-    width: 100%;
-    height: 100%;
+.seccion_presentacion .imagen {
+  height: 500px;
+  width: 500px;
+  margin-right: 150px;
+  margin-top: 100px;
 }
 
-.portada{
-    margin-left: 150px;
-    margin-top: 100px;  
+.seccion_presentacion img {
+  width: 100%;
+  height: 100%;
 }
 
-.portada h2{
-    font-size: 40px;    
-    margin-bottom: -20px;
+.portada {
+  margin-left: 150px;
+  margin-top: 100px;
 }
 
-.portada h1{
-    font-size: 100px;
-    font-weight: bolder;
-    color: blueviolet;    
-    margin-bottom: -40px;    
+.portada h2 {
+  font-size: 40px;
+  margin-bottom: -20px;
 }
 
-.portada p{
-    font-size: 18px;
-    margin-top: 60px;
+.portada h1 {
+  font-size: 100px;
+  font-weight: bolder;
+  color: blueviolet;
+  margin-bottom: -40px;
 }
 
-.portada button{
-    border-radius: 15px;
-    background-color: blueviolet;
-    color: white;
-    height: 40px;
-    width: 200px;
-    font-size: 18px;
-    font-weight: bold;
-    border-color: transparent;
-    padding: 5px;
+.portada p {
+  font-size: 18px;
+  margin-top: 60px;
 }
 
-.portada button a{
-    text-decoration: none;
-    color: white;
-} 
+.portada button {
+  border-radius: 15px;
+  background-color: blueviolet;
+  color: white;
+  height: 40px;
+  width: 200px;
+  font-size: 18px;
+  font-weight: bold;
+  border-color: transparent;
+  padding: 5px;
+}
 
-button:hover{    
-    box-shadow: 0 0 20px blueviolet;
+.portada button a {
+  text-decoration: none;
+  color: white;
+}
+
+button:hover {
+  box-shadow: 0 0 20px blueviolet;
 }
 /*Aquí está el código para la sección de habilidades*/
-#conocimiento{
-    margin-top: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+#conocimiento {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-#conocimiento p{
-    text-align: center;
-    width: 500px;
+#conocimiento p {
+  text-align: center;
+  width: 500px;
 }
 
-.b-container{
-    display: flex;
-    justify-content: center;
+.b-container {
+  display: flex;
+  justify-content: center;
 }
 
-.b-container button{
-    height: 200px;
-    width: 200px;
-    margin: 10px;
+.b-container button {
+  height: 200px;
+  width: 200px;
+  margin: 10px;
 }
-.b-container button:hover{
-    border: 2px solid blueviolet;
+.b-container button:hover {
+  border: 2px solid blueviolet;
 }
-.fa-brands{
-    font-size: 100px;    
+.fa-brands {
+  font-size: 100px;
 }
-.fa-solid{
-    font-size: 150px;
-    color: white;
-    width: 150px;  
+
+/* .iconito{
+    color: red;
+} */
+.fa-sass {
+  color: fuchsia;
+}
+
+.fa-solid {
+  font-size: 150px;
+  color: white;
+  width: 150px;
 }
 
 /*Aquí comienza el código para la sección de la cita*/
 
-.seccion_cita{
-    background-color: blueviolet;
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 100px;
+.seccion_cita {
+  background-color: blueviolet;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
 }
 
-.seccion_cita p{
-    font-size: 25px;
-    color: white;
-    width: 800px;
-    text-align: center;
+.seccion_cita p {
+  font-size: 25px;
+  color: white;
+  width: 800px;
+  text-align: center;
 }
 
-.seccion_cita span{
-    color: white;
-    font-weight: bolder;
-    font-size: 30px;
+.seccion_cita span {
+  color: white;
+  font-weight: bolder;
+  font-size: 30px;
 }
 /*Aquí comienza el código para la sección de proyectos con grilla de proyectos*/
 
-#proyecto{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#proyecto {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-#proyecto h1{
-    font-size: 40px;
+#proyecto h1 {
+  font-size: 40px;
 }
 
-#proyecto p{
-    text-align: center;
-    width: 500px;
-    font-size: 20px;
+#proyecto p {
+  text-align: center;
+  width: 500px;
+  font-size: 20px;
 }
 
-.contenedor_botones{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 50px 100px;
-
+.contenedor_botones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px 100px;
 }
 
-.contenedor_botones button{
-    width: 300px;
-    height: 300px;
-    border-radius: 15px;
-    border-color: transparent;
-    margin: 10px 26px 10px 15px; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.contenedor_botones button {
+  width: 300px;
+  height: 300px;
+  border-radius: 15px;
+  border-color: transparent;
+  margin: 10px 26px 10px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.epigrafe{
-    font-weight: bolder;
-    font-size: 18px;
+.epigrafe {
+  font-weight: bolder;
+  font-size: 18px;
 }
 
-.contenedor_botones button:hover{
-    border: 1px solid blueviolet;
+.contenedor_botones button:hover {
+  border: 1px solid blueviolet;
 }
 
-.contenedor_botones button:hover .epigrafe{
-    color: blueviolet;
+.contenedor_botones button:hover .epigrafe {
+  color: blueviolet;
 }
 
-.contenedor_botones button div{
-    width: 200px; 
+.contenedor_botones button div {
+  width: 200px;
 }
 
-.contenedor_botones button img{ 
-    width: 100%;
+.contenedor_botones button img {
+  width: 100%;
 }
 
 /*Aquí el código de la sección de contacto y formulario de contacto*/
 
-#contacto{
-    background-color: rgb(230, 223, 223);
-    height: 1000px;
-    width: 100%;
-    padding-top: 40px;
+#contacto {
+  background-color: rgb(230, 223, 223);
+  height: 1000px;
+  width: 100%;
+  padding-top: 40px;
 }
 
-.caja_contacto_formulario{
-    margin-top: 40px;
-    border-radius: 25px;
-    margin: 35px 70px 35px 70px;
-    background-color: white;
-    display: flex;
-    
+.caja_contacto_formulario {
+  margin-top: 40px;
+  border-radius: 25px;
+  margin: 35px 70px 35px 70px;
+  background-color: white;
+  display: flex;
 }
 
-.caja_contactame{
-    text-align: left;   
-    width: 40%;
-    height: 500px;
-    margin: 0 80px;    
+.caja_contactame {
+  text-align: left;
+  width: 40%;
+  height: 500px;
+  margin: 0 80px;
 }
 
-.caja_contactame h1{
-    font-size: 35px;
+.caja_contactame h1 {
+  font-size: 35px;
 }
 
-.caja_contactame p{
-    width: 400px;
-    font-size: 18px;
-    font-weight: lighter;
+.caja_contactame p {
+  width: 400px;
+  font-size: 18px;
+  font-weight: lighter;
 }
 
-.b_botones{
-    display: flex;    
+.b_botones {
+  display: flex;
 }
 
-.botones{    
-    height: 60px;
-    display: flex;
-    flex-direction: column;
+.botones {
+  height: 60px;
+  display: flex;
+  flex-direction: column;
 }
 
-.botones i{
-    font-size: 25px;
-    color: blueviolet;
-    text-align: center;
+.botones i {
+  font-size: 25px;
+  color: blueviolet;
+  text-align: center;
 }
 
-.botones button{
-    height: 40px;
-    width: 40px;
-    border: none;
-    background-color: transparent;
+.botones button {
+  height: 40px;
+  width: 40px;
+  border: none;
+  background-color: transparent;
 }
 
-.botones button:hover{
-    border-radius: 50%;
-    background-color: blueviolet;
+.botones button:hover {
+  border-radius: 50%;
+  background-color: blueviolet;
 }
 
-.botones i:hover{
-    color: white;
+.botones i:hover {
+  color: white;
 }
 
-.botones p{
-    margin-left:25px ;    
+.botones p {
+  margin-left: 25px;
 }
- /*Aquí el código del formulario de contacto*/
+/*Aquí el código del formulario de contacto*/
 
-
-.formulario h1{
-    font-size: 35px;
+.formulario h1 {
+  font-size: 35px;
 }
 
-form{
-    font-size: 25px;
+form {
+  font-size: 25px;
 }
-.nombre_caja{
-    display: flex;
-    
+.nombre_caja {
+  display: flex;
 }
-.nombre_caja input{
-    height: 40px;
-    width: 200px;
-    border-radius: 15px;
-    background-color: rgb(236, 228, 228);
-    border: none;
-    margin: 15px;
+.nombre_caja input {
+  height: 40px;
+  width: 200px;
+  border-radius: 15px;
+  background-color: rgb(236, 228, 228);
+  border: none;
+  margin: 15px;
 }
-.mail_caja input{
-    height: 40px;
-    width: 450px;
-    border-radius: 15px;
-    background-color: rgb(236, 228, 228);
-    border: none;
-    
+.mail_caja input {
+  height: 40px;
+  width: 450px;
+  border-radius: 15px;
+  background-color: rgb(236, 228, 228);
+  border: none;
 }
-textarea{
-    height: 200px;
-    width: 450px;
-    border-radius: 15px;
-    background-color: rgb(236, 228, 228);
-    border: none;
+textarea {
+  height: 200px;
+  width: 450px;
+  border-radius: 15px;
+  background-color: rgb(236, 228, 228);
+  border: none;
 }
-.enviar_caja input{
-    border-radius: 15px;
-    background-color: blueviolet;
-    color: white;
-    font-weight: bold;
-    border: none;
-    height: 30px;
-    width: 150px;
-    margin-bottom: 20px;
-
+.enviar_caja input {
+  border-radius: 15px;
+  background-color: blueviolet;
+  color: white;
+  font-weight: bold;
+  border: none;
+  height: 30px;
+  width: 150px;
+  margin-bottom: 20px;
 }
-.enviar_caja input:hover{
-    box-shadow: 0 0 20px blueviolet;
-
-
+.enviar_caja input:hover {
+  box-shadow: 0 0 20px blueviolet;
 }
-textarea::placeholder{
-    margin-top: 10px;
+textarea::placeholder {
+  margin-top: 10px;
 }
 /*Aquí el código del footer con links de navegación y links de contacto*/
-footer{
-    background-color: blueviolet;
-    color: white;
+footer {
+  background-color: blueviolet;
+  color: white;
 }
-.pie{
-    display: flex;
-    justify-content: center;
+.pie {
+  display: flex;
+  justify-content: center;
 }
-.pie li:hover{
-    color: white;
+.pie li:hover {
+  color: white;
 }
-.caja_botones_enlaces{
-    display: flex;
-    justify-content: center;
+.caja_botones_enlaces {
+  display: flex;
+  justify-content: center;
 }
-.caja_botones_enlaces button{
-    border-radius: 50%;
-    background-color: white;
-    height: 60px;
-    width: 60px;
-    border: none;
-    margin: 10px;
+.caja_botones_enlaces button {
+  border-radius: 50%;
+  background-color: white;
+  height: 60px;
+  width: 60px;
+  border: none;
+  margin: 10px;
 }
-.caja_botones_enlaces button:hover{
-    border-radius: 50%;
-    border:1px solid white;
-    background-color: blueviolet;
+.caja_botones_enlaces button:hover {
+  border-radius: 50%;
+  border: 1px solid white;
+  background-color: blueviolet;
 }
-.caja_botones_enlaces i:hover{
-    color: white;
+.caja_botones_enlaces i:hover {
+  color: white;
 }
-.caja_botones_enlaces i{
-    font-size: 30px;
+.caja_botones_enlaces i {
+  font-size: 30px;
 
-    color: blueviolet;
+  color: blueviolet;
 }
-.caja_botones_enlaces .fa-solid{
-    width: 100%;
-    margin: 0 auto;
-}
-
-#mail i{
-margin-left: -63px;
+.caja_botones_enlaces .fa-solid {
+  width: 100%;
+  margin: 0 auto;
 }
 
-.firma{
-    display: flex;
-    justify-content: center;
+#mail i {
+  margin-left: -63px;
 }
 
-@media (max-width:400px){
-    html{ 
-        font-size: 10px;
-        width: 360px;
-        display: flex;
-    }
-    nav{
-        display: none;
-    }
-    .seccion_presentacion{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 27rem;
-        margin: 0 ;
+.firma {
+  display: flex;
+  justify-content: center;
+}
 
-        
+/* RESPONSIVE */
+
+/* Large desktop */
+@media (min-width: 1200px) {
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    html {
+      font-size: 10px;
     }
-    
-    .seccion_presentacion .imagen{
-        height:18rem ;
-        width: 18rem ;
-        margin: 0;
-      
+    nav {
+      display: none;
+    }
+    .seccion_presentacion {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 27rem;
+      margin: 0;
     }
 
-    .portada{
-       margin: 0;
-        width: 25rem;
-        text-align: center;
+    .seccion_presentacion .imagen {
+      height: 18rem;
+      width: 18rem;
+      margin: 0;
     }
-    
-    .seccion_presentacion h2{
-        font-size: 2.4rem;    
-        margin-bottom: -1rem;
+
+    .portada {
+      margin: 0;
+      width: 25rem;
+      text-align: center;
     }
-    
-    .seccion_presentacion h1{
-        font-size: 3.2rem;  
-        margin-bottom: -2rem;
+
+    .seccion_presentacion h2 {
+      font-size: 2.4rem;
+      margin-bottom: -1rem;
     }
-    
-    .seccion_presentacion p{
-        font-size: 1.5rem;
-        margin-top: 3rem;
+
+    .seccion_presentacion h1 {
+      font-size: 3.2rem;
+      margin-bottom: -2rem;
     }
-    
-    .seccion_presentacion button{
-        border-radius: 1.5rem;
-        height: 2 rem;
-        width: 12rem;
-        font-size: 1.2rem;
-        padding: 0.3rem;
+
+    .seccion_presentacion p {
+      font-size: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    .seccion_presentacion button {
+      border-radius: 1.5rem;
+      height: 2 rem;
+      width: 12rem;
+      font-size: 1.2rem;
+      padding: 0.3rem;
     }
     /*Media sección de habilidades*/
-    #conocimiento{
-        margin-top: 5rem;
-        width: 27rem;
-        margin: 0 ;     
-        
-    }
-    
-    #conocimiento p{
-        text-align: center;
-        width: 10rem;
-    }
-    
-    .b-container{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    
-    .b-container button{
-        height: 15rem;
-        width: 15rem;
-        margin: 1rem;
+    #conocimiento {
+      margin-top: 5rem;
+      width: 27rem;
+      margin: 0;
     }
 
-    .fa-brands{
-        font-size: 8rem;    
+    #conocimiento p {
+      text-align: center;
+      width: 10rem;
     }
-    .fa-solid{
-        font-size: 8rem;
-        
+
+    .b-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
-    
+
+    .b-container button {
+      height: 15rem;
+      width: 15rem;
+      margin: 1rem;
+    }
+
+    .fa-brands {
+      font-size: 8rem;
+    }
+    .fa-solid {
+      font-size: 8rem;
+    }
+
     /*media para la sección de la cita*/
-    
-    .seccion_cita{
-        margin: 8rem 0 0 0;
-        height: 40rem;
-        width: 27rem;
+
+    .seccion_cita {
+      margin: 8rem 0 0 0;
+      height: 40rem;
+      width: 27rem;
     }
-    .seccion_cita i{
-        text-align: center;
+    .seccion_cita i {
+      text-align: center;
     }
-    .seccion_cita p{
-        font-size: 1.2rem;
-        color: white;
-        width: 17rem;
+    .seccion_cita p {
+      font-size: 1.2rem;
+      color: white;
+      width: 17rem;
     }
-    
-    .seccion_cita span{
-        color: white;
-        font-weight: bolder;
-        font-size: 1.5rem;
+
+    .seccion_cita span {
+      color: white;
+      font-weight: bolder;
+      font-size: 1.5rem;
     }
     /*media sección proyectos*/
-    #proyecto{
-        margin: 3rem 0 0 0;
-        width: 27rem;
-        align-items: center;
-        justify-content: center;
+    #proyecto {
+      margin: 3rem 0 0 0;
+      width: 27rem;
+      align-items: center;
+      justify-content: center;
     }
-    #proyecto h1{
-        font-size: 2.7rem;
-            }
-    #proyecto p{
-        font-size: 1.3rem;
-        width: 16rem;
+    #proyecto h1 {
+      font-size: 2.7rem;
     }
-   
-    .contenedor_botones{
-        flex-direction: column;
-        align-items: center;
+    #proyecto p {
+      font-size: 1.3rem;
+      width: 16rem;
     }
-    .contenedor_botones button{
-        width: 15rem;
-        height: 25rem;
-        margin: 1rem; 
+
+    .contenedor_botones {
+      flex-direction: column;
+      align-items: center;
     }
-    .contenedor_botones button img{
-        width: 10rem;
-        height: 10rem;
+    .contenedor_botones button {
+      width: 15rem;
+      height: 25rem;
+      margin: 1rem;
     }
-    .contenedor_botones .epigrafe{
-        font-size: 1.5rem;
-        width: 11rem;
+    .contenedor_botones button img {
+      width: 10rem;
+      height: 10rem;
+    }
+    .contenedor_botones .epigrafe {
+      font-size: 1.5rem;
+      width: 11rem;
     }
     /*media sección de contacto*/
-    #contacto{
-        width: 27rem;
-        display: flex;
-        justify-content: center;
-        height: 80rem;
-    
-    
+    #contacto {
+      width: 27rem;
+      display: flex;
+      justify-content: center;
+      height: 80rem;
     }
-    .caja_contactame{
-        display: none;
+    .caja_contactame {
+      display: none;
     }
 
-     /*Aquí el código del formulario de contacto*/
-     .formulario{
-
-        width:20rem;
-        height: 70rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: white;
-        border-radius: 1.5rem;
-        margin: 2rem 1 rem ;       
-        
-     }
-     .formulario h1{
-        font-size: 2rem;
-     }
-    .nombre_caja{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    /*Aquí el código del formulario de contacto*/
+    .formulario {
+      width: 20rem;
+      height: 70rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: white;
+      border-radius: 1.5rem;
+      margin: 2rem 1 rem;
     }
-    .nombre_caja p, .mail_caja p{
-        font-size: 1.7rem;
+    .formulario h1 {
+      font-size: 2rem;
+    }
+    .nombre_caja {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .nombre_caja p,
+    .mail_caja p {
+      font-size: 1.7rem;
     }
     .encabezado_mensaje {
-        font-size: 1.7rem;
+      font-size: 1.7rem;
     }
-    .nombre_caja input, .mail_caja input{
-        width: 14rem;
+    .nombre_caja input,
+    .mail_caja input {
+      width: 14rem;
+    }
+    .mail_caja input {
+      margin-left: 1.3rem;
+    }
+    textarea {
+      width: 14rem;
+      height: 10rem;
+      margin-left: 1.3rem;
+    }
+    .enviar_caja {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
+    .pie {
+      display: none;
     }
-    .mail_caja input{
-        margin-left: 1.3rem;
+    footer {
+      width: 27rem;
     }
-    textarea{
-        width:14rem;
-        height: 10rem;
-        margin-left: 1.3rem;
+    .caja_botones_enlaces {
+      width: 25rem;
     }
-    .enviar_caja{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-        
+    .caja_botones_enlaces button {
+      width: 2.5rem;
+      height: 2.5rem;
     }
-  
-    .pie{
-        display: none;
+    .caja_botones_enlaces i {
+      font-size: 1.4rem;
     }
-    footer{
-        width: 27rem;
-    
-    }
-    .caja_botones_enlaces{
-        width: 25rem;
-    }
-    .caja_botones_enlaces button{
-        width: 2.5rem;
-        height: 2.5rem;
-    }
-    .caja_botones_enlaces  i{
-
-        font-size: 1.4rem;
-
-    }
-}
-    
-    
+  }
