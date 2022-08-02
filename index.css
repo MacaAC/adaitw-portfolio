@@ -1,0 +1,1091 @@
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Merriweather", serif;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+/*Aquí código del header con links de navegación*/
+nav {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  box-shadow: 0 0 20px blueviolet;
+  top: 0;
+  left: 0;
+}
+
+nav a:hover {
+  color: blueviolet;
+}
+
+ul {
+  flex-direction: row;
+  display: flex;
+  list-style-type: none;
+}
+
+li {
+  margin: 20px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+}
+
+.enlace_contacto {
+  background-color: blueviolet;
+  height: 35px;
+  width: 120px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/*Aquí está elcódigo para la sección de presentación*/
+
+.seccion_presentacion {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+.seccion_presentacion .imagen {
+  height: 500px;
+  width: 500px;
+  margin-right: 150px;
+  margin-top: 100px;
+}
+
+.seccion_presentacion img {
+  width: 100%;
+  height: 100%;
+}
+
+.portada {
+  margin-left: 150px;
+  margin-top: 100px;
+}
+
+.portada h2 {
+  font-size: 40px;
+  margin-bottom: -20px;
+}
+
+.portada h1 {
+  font-size: 100px;
+  font-weight: bolder;
+  color: blueviolet;
+  margin-bottom: -40px;
+}
+
+.portada p {
+  font-size: 18px;
+  margin-top: 60px;
+}
+
+.portada button {
+  border-radius: 15px;
+  background-color: blueviolet;
+  color: white;
+  height: 40px;
+  width: 200px;
+  font-size: 18px;
+  font-weight: bold;
+  border-color: transparent;
+  padding: 5px;
+}
+
+.portada button a {
+  text-decoration: none;
+  color: white;
+}
+
+button:hover {
+  box-shadow: 0 0 20px blueviolet;
+}
+/*Aquí está el código para la sección de habilidades*/
+#conocimiento {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#conocimiento p {
+  text-align: center;
+  width: 500px;
+}
+
+.b-contenedor {
+  display: flex;
+  justify-content: center;
+}
+
+.b-contenedor button {
+  height: 200px;
+  width: 200px;
+  margin: 10px;
+}
+.b-contenedor button:hover {
+  border: 2px solid blueviolet;
+}
+.fa-brands {
+  font-size: 100px;
+}
+
+.fa-sass {
+  color: fuchsia;
+}
+.fa-html5 {
+  color: red;
+}
+.fa-css3-alt {
+  color: blue;
+}
+.fa-js {
+  color: yellow;
+}
+.fa-react {
+  color: turquoise;
+}
+.fa-git-alt {
+  color: red;
+}
+.fa-solid {
+  font-size: 150px;
+  color: white;
+  width: 150px;
+}
+
+/*Aquí comienza el código para la sección de la cita*/
+
+.seccion_cita {
+  background-color: blueviolet;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.seccion_cita p {
+  font-size: 25px;
+  color: white;
+  width: 800px;
+  text-align: center;
+}
+
+.seccion_cita span {
+  color: white;
+  font-weight: bolder;
+  font-size: 30px;
+}
+/*Aquí comienza el código para la sección de proyectos con grilla de proyectos*/
+
+#proyecto {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#proyecto h1 {
+  font-size: 40px;
+}
+
+#proyecto p {
+  text-align: center;
+  width: 500px;
+  font-size: 20px;
+}
+
+.contenedor_botones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px 100px;
+}
+
+.contenedor_botones button {
+  width: 300px;
+  height: 300px;
+  border-radius: 15px;
+  border-color: transparent;
+  margin: 10px 26px 10px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.epigrafe {
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+.contenedor_botones button:hover {
+  border: 1px solid blueviolet;
+}
+
+.contenedor_botones button:hover .epigrafe {
+  color: blueviolet;
+}
+
+.contenedor_botones button div {
+  width: 200px;
+}
+
+.contenedor_botones button img {
+  width: 100%;
+}
+
+/*Aquí el código de la sección de contacto y formulario de contacto*/
+
+#contacto {
+  background-color: rgb(230, 223, 223);
+  height: 900px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.caja_contacto_formulario {
+  border-radius: 25px;
+  background-color: white;
+  display: flex;
+}
+
+.caja_contactame {
+  text-align: left;
+  width: 40%;
+  height: 500px;
+  margin: 0 80px;
+}
+
+.caja_contactame h1 {
+  font-size: 35px;
+}
+
+.caja_contactame p {
+  width: 400px;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.b_botones {
+  display: flex;
+}
+
+.botones {
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.botones i {
+  font-size: 25px;
+  color: blueviolet;
+  text-align: center;
+}
+
+.botones button {
+  height: 40px;
+  width: 40px;
+  border: none;
+  background-color: transparent;
+}
+
+.botones button:hover {
+  border-radius: 50%;
+  background-color: blueviolet;
+}
+
+.botones i:hover {
+  color: white;
+}
+
+.botones p {
+  margin-left: 25px;
+}
+/*Aquí el código del formulario de contacto*/
+
+.formulario h1 {
+  font-size: 35px;
+}
+
+form {
+  font-size: 25px;
+}
+.nombre_caja {
+  display: flex;
+}
+.nombre_caja input {
+  height: 40px;
+  width: 200px;
+  border-radius: 15px;
+  background-color: rgb(236, 228, 228);
+  border: none;
+  margin: 15px;
+}
+.mail_caja input {
+  height: 40px;
+  width: 450px;
+  border-radius: 15px;
+  background-color: rgb(236, 228, 228);
+  border: none;
+}
+textarea {
+  height: 200px;
+  width: 450px;
+  border-radius: 15px;
+  background-color: rgb(236, 228, 228);
+  border: none;
+}
+.enviar_caja input {
+  border-radius: 15px;
+  background-color: blueviolet;
+  color: white;
+  font-weight: bold;
+  border: none;
+  height: 30px;
+  width: 150px;
+  margin-bottom: 20px;
+}
+.enviar_caja input:hover {
+  box-shadow: 0 0 20px blueviolet;
+}
+textarea::placeholder {
+  margin-top: 10px;
+}
+/*Aquí el código del footer con links de navegación y links de contacto*/
+footer {
+  background-color: blueviolet;
+  color: white;
+}
+.pie {
+  display: flex;
+  justify-content: center;
+}
+.pie li:hover {
+  color: white;
+}
+.caja_botones_enlaces {
+  display: flex;
+  justify-content: center;
+}
+.caja_botones_enlaces button {
+  border-radius: 50%;
+  background-color: white;
+  height: 60px;
+  width: 60px;
+  border: none;
+  margin: 10px;
+}
+.caja_botones_enlaces button:hover {
+  border-radius: 50%;
+  border: 1px solid white;
+  background-color: blueviolet;
+}
+.caja_botones_enlaces i:hover {
+  color: white;
+}
+.caja_botones_enlaces i {
+  font-size: 30px;
+
+  color: blueviolet;
+}
+.caja_botones_enlaces .fa-solid {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#mail i {
+  margin-left: -63px;
+}
+
+.firma {
+  display: flex;
+  justify-content: center;
+}
+
+/* RESPONSIVE */
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  html {
+    font-size: 10px;
+  }
+  nav {
+    display: none;
+  }
+  .seccion_presentacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  .seccion_presentacion .imagen {
+    height: 18rem;
+    width: 18rem;
+    margin: 0;
+  }
+
+  .portada {
+    margin: 0;
+    width: 25rem;
+    text-align: center;
+  }
+
+  .seccion_presentacion h2 {
+    font-size: 2.4rem;
+    margin-bottom: -1rem;
+  }
+
+  .seccion_presentacion h1 {
+    font-size: 3.2rem;
+    margin-bottom: -2rem;
+  }
+
+  .seccion_presentacion p {
+    font-size: 1.5rem;
+    margin-top: 3rem;
+  }
+
+  .seccion_presentacion button {
+    border-radius: 1.5rem;
+    height: 2 rem;
+    width: 12rem;
+    font-size: 1.2rem;
+    padding: 0.3rem;
+  }
+  /*Media sección de habilidades*/
+  #conocimiento {
+    width: 100%;
+    margin: 0;
+  }
+
+  #conocimiento p {
+    text-align: center;
+    width: 30rem;
+    font-size: 1.5rem;
+  }
+  .a-contenedor {
+    display: flex;
+  }
+
+  .b-contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .b-contenedor button {
+    height: 14rem;
+    width: 14rem;
+    margin: 1rem;
+  }
+
+  .fa-brands {
+    font-size: 7rem;
+  }
+  .fa-solid {
+    font-size: 7rem;
+  }
+
+  /*media para la sección de la cita*/
+
+  .seccion_cita {
+    margin: 8rem 0 0 0;
+    height: 40rem;
+    width: 100%;
+  }
+  .seccion_cita i {
+    text-align: center;
+  }
+  .seccion_cita p {
+    font-size: 1.5rem;
+    color: white;
+    width: 20rem;
+  }
+
+  .seccion_cita span {
+    color: white;
+    font-weight: bolder;
+    font-size: 1.5rem;
+  }
+  /*media sección proyectos*/
+  #proyecto {
+    margin: 3rem 0 0 0;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  #proyecto h1 {
+    font-size: 2.7rem;
+  }
+  #proyecto p {
+    font-size: 1.3rem;
+    width: 16rem;
+  }
+  .contenedor_botones {
+    width: 100%;
+  }
+
+  .contenedor_botones button {
+    width: 15rem;
+    height: 20rem;
+    margin: 1rem;
+  }
+  .contenedor_botones button img {
+    width: 10rem;
+    height: 10rem;
+  }
+  .contenedor_botones .epigrafe {
+    font-size: 1.5rem;
+    width: 11rem;
+  }
+  /*media sección de contacto*/
+  #contacto {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(230, 223, 223);
+  }
+  .caja_contacto_formulario {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+  }
+  .caja_contactame {
+    display: none;
+  }
+
+  /*Aquí el código del formulario de contacto*/
+  .formulario {
+    width: 100%;
+    height: 70rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 1.5rem;
+  }
+  .formulario h1 {
+    font-size: 2rem;
+  }
+  .nombre_caja {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nombre_caja p,
+  .mail_caja p {
+    font-size: 1.7rem;
+  }
+  .encabezado_mensaje {
+    font-size: 1.7rem;
+  }
+  .nombre_caja input,
+  .mail_caja input {
+    width: 22rem;
+  }
+  .mail_caja input {
+    margin-left: 1.3rem;
+  }
+  textarea {
+    width: 22rem;
+    height: 10rem;
+    margin-left: 1.3rem;
+  }
+  .enviar_caja {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pie {
+    display: none;
+  }
+  footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .caja_botones_enlaces {
+    width: 25rem;
+    margin-top: 1rem;
+  }
+  .caja_botones_enlaces button {
+    width: 3rem;
+    height: 3rem;
+  }
+  .caja_botones_enlaces i {
+    font-size: 1.4rem;
+  }
+  .firma {
+    font-size: 1.5rem;
+  }
+}
+
+/*media para tablet*/
+@media (min-width: 481px) and (max-width: 767px) {
+  html {
+    font-size: 15px;
+  }
+  nav {
+    display: none;
+  }
+  .seccion_presentacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  .seccion_presentacion .imagen {
+    height: 18rem;
+    width: 20rem;
+    margin: 0;
+  }
+
+  .portada {
+    margin: 0;
+    width: 25rem;
+    text-align: center;
+  }
+
+  .seccion_presentacion h2 {
+    font-size: 2.4rem;
+    margin-bottom: -1rem;
+  }
+
+  .seccion_presentacion h1 {
+    font-size: 3.2rem;
+    margin-bottom: -2rem;
+  }
+
+  .seccion_presentacion p {
+    font-size: 1.5rem;
+    margin-top: 3rem;
+  }
+
+  .seccion_presentacion button {
+    border-radius: 1.5rem;
+    height: 2 rem;
+    width: 12rem;
+    font-size: 1.2rem;
+    padding: 0.3rem;
+  }
+  /*Media sección de habilidades*/
+  #conocimiento {
+    width: 100%;
+    margin: 0;
+  }
+
+  #conocimiento p {
+    text-align: center;
+    width: 30rem;
+    font-size: 1.5rem;
+  }
+  .a-contenedor {
+    display: flex;
+  }
+
+  .b-contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .b-contenedor button {
+    height: 14rem;
+    width: 14rem;
+    margin: 1rem;
+  }
+
+  .fa-brands {
+    font-size: 7rem;
+  }
+  .fa-solid {
+    font-size: 7rem;
+  }
+
+  /*media para la sección de la cita*/
+
+  .seccion_cita {
+    margin: 8rem 0 0 0;
+    height: 40rem;
+    width: 100%;
+  }
+  .seccion_cita i {
+    text-align: center;
+  }
+  .seccion_cita p {
+    font-size: 1.5rem;
+    color: white;
+    width: 20rem;
+  }
+
+  .seccion_cita span {
+    color: white;
+    font-weight: bolder;
+    font-size: 1.5rem;
+  }
+  /*media sección proyectos*/
+  #proyecto {
+    margin: 3rem 0 0 0;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  #proyecto h1 {
+    font-size: 2.7rem;
+  }
+  #proyecto p {
+    font-size: 1.3rem;
+    width: 16rem;
+  }
+  .contenedor_botones {
+    width: 100%;
+  }
+
+  .contenedor_botones button {
+    width: 10rem;
+    height: 15rem;
+    margin: 1rem;
+  }
+  .contenedor_botones button img {
+    width: 6rem;
+    height: 6rem;
+  }
+  .contenedor_botones .epigrafe {
+    font-size: 1rem;
+    width: 8rem;
+  }
+  /*media sección de contacto*/
+  #contacto {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(230, 223, 223);
+    height: 70rem;
+  }
+  .caja_contacto_formulario {
+    height: 60rem;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+  }
+  .caja_contactame {
+    display: none;
+  }
+
+  /*Aquí el código del formulario de contacto*/
+  .formulario {
+    width: 100%;
+    height: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 1.5rem;
+  }
+  .formulario h1 {
+    font-size: 2rem;
+  }
+  .nombre_caja {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nombre_caja p,
+  .mail_caja p {
+    font-size: 1.7rem;
+  }
+  .encabezado_mensaje {
+    font-size: 1.7rem;
+  }
+  .nombre_caja input,
+  .mail_caja input {
+    width: 22rem;
+  }
+  .mail_caja input {
+    margin-left: 1.3rem;
+  }
+  textarea {
+    width: 22rem;
+    height: 10rem;
+    margin-left: 1.3rem;
+  }
+  .enviar_caja {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pie {
+    display: none;
+  }
+  footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .caja_botones_enlaces {
+    width: 25rem;
+    margin-top: 1rem;
+  }
+  .caja_botones_enlaces button {
+    width: 3rem;
+    height: 3rem;
+  }
+  .caja_botones_enlaces i {
+    font-size: 1.4rem;
+  }
+  .firma {
+    font-size: 1.5rem;
+  }
+}
+
+/*MEDIA PARA Escritorio */
+@media (min-width: 768px) and (max-width: 979px) {
+  html {
+    font-size: 18px;
+  }
+  nav {
+    display: none;
+  }
+  .seccion_presentacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  .seccion_presentacion .imagen {
+    height: 18rem;
+    width: 20rem;
+    margin: 0;
+  }
+
+  .portada {
+    margin: 0;
+    width: 25rem;
+    text-align: center;
+  }
+
+  .seccion_presentacion h2 {
+    font-size: 2.4rem;
+    margin-bottom: -1rem;
+  }
+
+  .seccion_presentacion h1 {
+    font-size: 3.2rem;
+    margin-bottom: -2rem;
+  }
+
+  .seccion_presentacion p {
+    font-size: 1.5rem;
+    margin-top: 3rem;
+  }
+
+  .seccion_presentacion button {
+    border-radius: 1.5rem;
+    height: 2 rem;
+    width: 12rem;
+    font-size: 1.2rem;
+    padding: 0.3rem;
+  }
+  /*Media sección de habilidades*/
+  #conocimiento {
+    width: 100%;
+    margin: 0;
+  }
+
+  #conocimiento p {
+    text-align: center;
+    width: 30rem;
+    font-size: 1.5rem;
+  }
+  .a-contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .b-contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .b-contenedor button {
+    height: 14rem;
+    width: 14rem;
+    margin: 1rem;
+  }
+
+  .fa-brands {
+    font-size: 7rem;
+  }
+  .fa-solid {
+    font-size: 7rem;
+  }
+
+  /*media para la sección de la cita*/
+
+  .seccion_cita {
+    margin: 8rem 0 0 0;
+    height: 35rem;
+    width: 100%;
+  }
+  .seccion_cita i {
+    text-align: center;
+  }
+  .seccion_cita p {
+    font-size: 1.5rem;
+    color: white;
+    width: 25rem;
+  }
+
+  .seccion_cita span {
+    color: white;
+    font-weight: bolder;
+    font-size: 1.5rem;
+  }
+  /*media sección proyectos*/
+  #proyecto {
+    margin: 3rem 0 0 0;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  #proyecto h1 {
+    font-size: 2.7rem;
+  }
+  #proyecto p {
+    font-size: 1.3rem;
+    width: 16rem;
+  }
+  .contenedor_botones {
+    width: 100%;
+  }
+
+  .contenedor_botones button {
+    width: 10rem;
+    height: 15rem;
+    margin: 1rem;
+  }
+  .contenedor_botones button img {
+    width: 6rem;
+    height: 6rem;
+  }
+  .contenedor_botones .epigrafe {
+    font-size: 1rem;
+    width: 8rem;
+  }
+  /*media sección de contacto*/
+
+  #contacto {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(230, 223, 223);
+    height: 60rem;
+  }
+  /*Aquí el código del formulario de contacto*/
+  .formulario {
+    width: 40%;
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 1.5rem;
+  }
+  .formulario h1 {
+    font-size: 2rem;
+  }
+  .nombre_caja {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nombre_caja p,
+  .mail_caja p {
+    font-size: 1.7rem;
+  }
+  .encabezado_mensaje {
+    font-size: 1.7rem;
+  }
+  .nombre_caja input,
+  .mail_caja input {
+    width: 16rem;
+  }
+  .mail_caja input {
+    margin-left: 1.3rem;
+  }
+  textarea {
+    width: 16rem;
+    height: 10rem;
+    margin-left: 1rem;
+  }
+  .enviar_caja {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+   .pie {
+    display: none;
+  }
+  footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .caja_botones_enlaces {
+    width: 25rem;
+    margin-top: 1rem;
+  }
+  .caja_botones_enlaces button {
+    width: 3rem;
+    height: 3rem;
+  }
+  .caja_botones_enlaces i {
+    font-size: 1.4rem;
+  }
+  .firma {
+    font-size: 1.5rem;
+  }
+}
