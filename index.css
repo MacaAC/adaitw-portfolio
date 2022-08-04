@@ -1,4 +1,4 @@
-* { 
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -8,12 +8,11 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
 }
-html{
+html {
   height: 100%;
-  font-family: "Merriweather", serif;  
+  font-family: "Merriweather", serif;
   font-family: "Roboto Condensed", sans-serif;
 }
-
 
 /*Aquí código del header con links de navegación*/
 nav {
@@ -21,7 +20,7 @@ nav {
   background-color: white;
   display: flex;
   justify-content: flex-end;
-  position: fixed; 
+  position: fixed;
   box-shadow: 0 0 20px blueviolet;
   top: 0;
   left: 0;
@@ -76,7 +75,7 @@ a {
 
 #seccion_presentacion img {
   width: 100%;
-  height: 100%; 
+  height: 100%;
 }
 
 .portada {
@@ -276,6 +275,8 @@ button:hover {
   border-radius: 25px;
   background-color: white;
   display: flex;
+  padding: 15px;
+  box-sizing: border-box;
 }
 
 .caja_contactame {
@@ -300,9 +301,9 @@ button:hover {
 }
 
 .botones {
-  height: 60px;
   display: flex;
   flex-direction: column;
+  margin-top: 35px;
 }
 
 .botones i {
@@ -423,7 +424,7 @@ footer {
 }
 
 #mail i {
-  margin-left: -63px;
+  margin-left:-55px;
 }
 
 .firma {
@@ -433,29 +434,26 @@ footer {
 
 /* RESPONSIVE/*
 
-/* Landscape phones and down */
+/* Diseño responsive para mobiles */
 @media (max-width: 480px) {
   html {
     font-size: 10px;
-    
   }
 
- nav { 
+  nav {
     display: none;
-   
-  } 
-  
+  }
+
   #seccion_presentacion {
     flex-direction: column;
     height: 45rem;
     margin-bottom: 4rem;
-  
   }
 
   #seccion_presentacion .imagen {
     height: 18rem;
     width: 18rem;
-    margin:0;
+    margin: 0;
   }
 
   .portada {
@@ -490,7 +488,6 @@ footer {
   #conocimiento {
     width: 100%;
     margin: 0;
-    
   }
 
   #conocimiento p {
@@ -528,7 +525,6 @@ footer {
     margin: 8rem 0 0 0;
     height: 40rem;
     width: 100%;
-    
   }
   .seccion_cita i {
     text-align: center;
@@ -549,7 +545,6 @@ footer {
     margin: 3rem 0 0 0;
     width: 100%;
     justify-content: center;
-   
   }
   #proyecto h1 {
     font-size: 2.7rem;
@@ -581,7 +576,6 @@ footer {
     display: flex;
     justify-content: center;
     background-color: rgb(230, 223, 223);
-    
   }
   .caja_contacto_formulario {
     width: 90%;
@@ -592,7 +586,7 @@ footer {
     display: none;
   }
 
-  /*Aquí el código del formulario de contacto*/
+  /*media para el formulario de contacto*/
   .formulario {
     width: 100%;
     height: 70rem;
@@ -661,15 +655,16 @@ footer {
   }
 }
 
-/*media para tablet*/
+/*Diseño responsive para tablet*/
 @media (min-width: 481px) and (max-width: 767px) {
   html {
     font-size: 15px;
   }
- 
+
   nav {
     display: none;
   }
+  /*Media para la sección de presentación/tablet*/
   #seccion_presentacion {
     display: flex;
     flex-direction: column;
@@ -677,14 +672,12 @@ footer {
     justify-content: center;
     width: 100%;
     margin: 0;
- 
   }
 
   #seccion_presentacion .imagen {
     height: 18rem;
     width: 20rem;
     margin: 0;
-
   }
 
   .portada {
@@ -694,7 +687,6 @@ footer {
     width: 25rem;
     padding: 0;
     text-align: center;
-  
   }
 
   #seccion_presentacion h2 {
@@ -719,7 +711,7 @@ footer {
     font-size: 1.2rem;
     padding: 0.3rem;
   }
-  /*Media sección de habilidades*/
+  /*Media sección de habilidades/tablet*/
   #conocimiento {
     width: 100%;
     margin: 0;
@@ -731,7 +723,6 @@ footer {
     max-width: 45rem;
     padding: 1.5rem;
     box-sizing: border-box;
-   
   }
   .a-contenedor {
     display: flex;
@@ -757,7 +748,7 @@ footer {
     font-size: 7rem;
   }
 
-  /*media para la sección de la cita*/
+  /*media para la sección de la cita/tablet*/
 
   .seccion_cita {
     margin: 8rem 0 0 0;
@@ -778,7 +769,7 @@ footer {
     font-weight: bolder;
     font-size: 1.5rem;
   }
-  /*media sección proyectos*/
+  /*media sección proyectos/tablet*/
   #proyecto {
     margin: 3rem 0 0 0;
     width: 100%;
@@ -809,7 +800,7 @@ footer {
     font-size: 1rem;
     width: 8rem;
   }
-  /*media sección de contacto*/
+  /*media sección de contacto/tablet*/
   #contacto {
     width: 100%;
     display: flex;
@@ -827,7 +818,7 @@ footer {
     display: none;
   }
 
-  /*Aquí el código del formulario de contacto*/
+  /*media del formulario de contacto/tablet*/
   .formulario {
     width: 100%;
     height: 60rem;
@@ -870,6 +861,7 @@ footer {
     justify-content: center;
     align-items: center;
   }
+  /*media para el footer/tablet*/
 
   .pie {
     display: none;
@@ -879,7 +871,6 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
   }
   .caja_botones_enlaces {
     width: 25rem;
@@ -896,15 +887,12 @@ footer {
     font-size: 1.5rem;
   }
 }
-/* (TRABAJANDO) */
-@media (min-width: 768px) and (max-width:1130px){
+/* Responsive para escritorio */
+@media (min-width: 768px) and (max-width: 1130px) {
   html {
     font-size: 18px;
   }
-
-  /* nav {
-    display: none;
-  } */
+  /*media para sección de presentación/escritorio*/
   #seccion_presentacion {
     display: flex;
     flex-direction: column;
@@ -912,7 +900,6 @@ footer {
     justify-content: center;
     width: 100%;
     margin: 0;
-   
   }
 
   #seccion_presentacion .imagen {
@@ -949,7 +936,7 @@ footer {
     font-size: 1.2rem;
     padding: 0.3rem;
   }
-  /*Media sección de habilidades*/
+  /*Media sección de habilidades/escritorio*/
   #conocimiento {
     width: 100%;
     margin: 0;
@@ -964,7 +951,6 @@ footer {
     width: 95%;
     padding: 2rem;
     box-sizing: border-box;
-    
   }
   .b-contenedor button {
     height: 10rem;
@@ -979,7 +965,7 @@ footer {
     font-size: 6rem;
   }
 
-  /*media para la sección de la cita*/
+  /*media para la sección de la cita/escritorio*/
 
   .seccion_cita {
     margin: 8rem 0 0 0;
@@ -1000,7 +986,7 @@ footer {
     font-weight: bolder;
     font-size: 1.5rem;
   }
-  /*media sección proyectos*/
+  /*media sección proyectos/escritorio*/
   #proyecto {
     margin: 3rem 0 0 0;
     width: 100%;
@@ -1031,7 +1017,7 @@ footer {
     font-size: 1rem;
     width: 8rem;
   }
-  /*media sección de contacto*/
+  /*media sección de contacto/escritorio*/
 
   #contacto {
     width: 100%;
@@ -1040,32 +1026,24 @@ footer {
     align-items: center;
     background-color: rgb(230, 223, 223);
     height: 55rem;
-  
   }
-  .caja_contacto_formulario{
+  .caja_contacto_formulario {
     width: 90%;
     height: 52rem;
     display: flex;
     justify-content: center;
     align-items: center;
-
   }
-  .caja_contactame{
+  .caja_contactame {
     width: 40%;
-    height:45rem ;
-    margin:0.5rem;
-   
-    
+    height: 45rem;
+    margin: 0.5rem;
   }
-  .caja_contactame p{
+  .caja_contactame p {
     width: 90%;
-    
-
-
   }
-  
-  
-  /*Aquí el código del formulario de contacto*/
+
+  /*Aquí el código del formulario de contacto/escritorio*/
   .formulario {
     margin: 0.5rem;
     width: 40%;
@@ -1075,7 +1053,6 @@ footer {
     align-items: center;
     justify-content: center;
     border-radius: 1.5rem;
-    
   }
   .formulario h1 {
     font-size: 2rem;
@@ -1109,7 +1086,8 @@ footer {
     justify-content: center;
     align-items: center;
   }
-   .pie {
+  /*media para el footer/escritorio*/
+  .pie {
     display: none;
   }
   footer {
