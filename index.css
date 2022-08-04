@@ -1,9 +1,19 @@
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+html{
   height: 100%;
-  font-family: "Merriweather", serif;
+  font-family: "Merriweather", serif;  
   font-family: "Roboto Condensed", sans-serif;
 }
+
 
 /*Aquí código del header con links de navegación*/
 nav {
@@ -11,7 +21,7 @@ nav {
   background-color: white;
   display: flex;
   justify-content: flex-end;
-  position: fixed;
+  position: fixed; 
   box-shadow: 0 0 20px blueviolet;
   top: 0;
   left: 0;
@@ -52,44 +62,44 @@ a {
 
 /*Aquí está elcódigo para la sección de presentación*/
 
-.seccion_presentacion {
+#seccion_presentacion {
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top: 100px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 130px;
 }
-.seccion_presentacion .imagen {
-  height: 500px;
-  width: 500px;
-  margin-right: 150px;
-  margin-top: 100px;
+#seccion_presentacion .imagen {
+  height: 400px;
+  max-width: 500px;
 }
 
-.seccion_presentacion img {
+#seccion_presentacion img {
   width: 100%;
-  height: 100%;
+  height: 100%; 
 }
 
 .portada {
-  margin-left: 150px;
-  margin-top: 100px;
+  width: 45%;
+  height: 500px;
 }
 
 .portada h2 {
+  margin: 0;
   font-size: 40px;
-  margin-bottom: -20px;
 }
 
 .portada h1 {
   font-size: 100px;
   font-weight: bolder;
   color: blueviolet;
-  margin-bottom: -40px;
+  margin: 50px 0 30px 0;
 }
 
 .portada p {
   font-size: 18px;
-  margin-top: 60px;
+  margin: 0;
+  margin-bottom: 50px;
 }
 
 .portada button {
@@ -102,6 +112,7 @@ a {
   font-weight: bold;
   border-color: transparent;
   padding: 5px;
+  margin: 0;
 }
 
 .portada button a {
@@ -114,7 +125,7 @@ button:hover {
 }
 /*Aquí está el código para la sección de habilidades*/
 #conocimiento {
-  margin-top: 100px;
+  margin-top: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -420,29 +431,31 @@ footer {
   justify-content: center;
 }
 
-/* RESPONSIVE */
+/* RESPONSIVE/*
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
   html {
     font-size: 10px;
-  }
-  nav {
-    display: none;
-  }
-  .seccion_presentacion {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin: 0;
+    
   }
 
-  .seccion_presentacion .imagen {
+ nav { 
+    display: none;
+   
+  } 
+  
+  #seccion_presentacion {
+    flex-direction: column;
+    height: 45rem;
+    margin-bottom: 4rem;
+  
+  }
+
+  #seccion_presentacion .imagen {
     height: 18rem;
     width: 18rem;
-    margin: 0;
+    margin:0;
   }
 
   .portada {
@@ -451,22 +464,22 @@ footer {
     text-align: center;
   }
 
-  .seccion_presentacion h2 {
+  #seccion_presentacion h2 {
     font-size: 2.4rem;
     margin-bottom: -1rem;
   }
 
-  .seccion_presentacion h1 {
+  #seccion_presentacion h1 {
     font-size: 3.2rem;
     margin-bottom: -2rem;
   }
 
-  .seccion_presentacion p {
+  #seccion_presentacion p {
     font-size: 1.5rem;
     margin-top: 3rem;
   }
 
-  .seccion_presentacion button {
+  #seccion_presentacion button {
     border-radius: 1.5rem;
     height: 2 rem;
     width: 12rem;
@@ -477,6 +490,7 @@ footer {
   #conocimiento {
     width: 100%;
     margin: 0;
+    
   }
 
   #conocimiento p {
@@ -514,6 +528,7 @@ footer {
     margin: 8rem 0 0 0;
     height: 40rem;
     width: 100%;
+    
   }
   .seccion_cita i {
     text-align: center;
@@ -533,8 +548,8 @@ footer {
   #proyecto {
     margin: 3rem 0 0 0;
     width: 100%;
-    align-items: center;
     justify-content: center;
+   
   }
   #proyecto h1 {
     font-size: 2.7rem;
@@ -566,6 +581,7 @@ footer {
     display: flex;
     justify-content: center;
     background-color: rgb(230, 223, 223);
+    
   }
   .caja_contacto_formulario {
     width: 90%;
@@ -650,46 +666,53 @@ footer {
   html {
     font-size: 15px;
   }
+ 
   nav {
     display: none;
   }
-  .seccion_presentacion {
+  #seccion_presentacion {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
     margin: 0;
+ 
   }
 
-  .seccion_presentacion .imagen {
+  #seccion_presentacion .imagen {
     height: 18rem;
     width: 20rem;
     margin: 0;
+
   }
 
   .portada {
-    margin: 0;
+    flex-direction: column;
+    height: 25rem;
+    margin: 4rem 0 0 0;
     width: 25rem;
+    padding: 0;
     text-align: center;
+  
   }
 
-  .seccion_presentacion h2 {
+  #seccion_presentacion h2 {
     font-size: 2.4rem;
     margin-bottom: -1rem;
   }
 
-  .seccion_presentacion h1 {
+  #seccion_presentacion h1 {
     font-size: 3.2rem;
     margin-bottom: -2rem;
   }
 
-  .seccion_presentacion p {
+  #seccion_presentacion p {
     font-size: 1.5rem;
     margin-top: 3rem;
   }
 
-  .seccion_presentacion button {
+  #seccion_presentacion button {
     border-radius: 1.5rem;
     height: 2 rem;
     width: 12rem;
@@ -704,8 +727,11 @@ footer {
 
   #conocimiento p {
     text-align: center;
-    width: 30rem;
     font-size: 1.5rem;
+    max-width: 45rem;
+    padding: 1.5rem;
+    box-sizing: border-box;
+   
   }
   .a-contenedor {
     display: flex;
@@ -853,6 +879,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
   }
   .caja_botones_enlaces {
     width: 25rem;
@@ -869,25 +896,26 @@ footer {
     font-size: 1.5rem;
   }
 }
-
-/*MEDIA PARA Escritorio */
-@media (min-width: 768px) and (max-width: 979px) {
+/* (TRABAJANDO) */
+@media (min-width: 768px) and (max-width:1130px){
   html {
     font-size: 18px;
   }
-  nav {
+
+  /* nav {
     display: none;
-  }
-  .seccion_presentacion {
+  } */
+  #seccion_presentacion {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
     margin: 0;
+   
   }
 
-  .seccion_presentacion .imagen {
+  #seccion_presentacion .imagen {
     height: 18rem;
     width: 20rem;
     margin: 0;
@@ -899,22 +927,22 @@ footer {
     text-align: center;
   }
 
-  .seccion_presentacion h2 {
+  #seccion_presentacion h2 {
     font-size: 2.4rem;
     margin-bottom: -1rem;
   }
 
-  .seccion_presentacion h1 {
+  #seccion_presentacion h1 {
     font-size: 3.2rem;
     margin-bottom: -2rem;
   }
 
-  .seccion_presentacion p {
+  #seccion_presentacion p {
     font-size: 1.5rem;
     margin-top: 3rem;
   }
 
-  .seccion_presentacion button {
+  #seccion_presentacion button {
     border-radius: 1.5rem;
     height: 2 rem;
     width: 12rem;
@@ -933,31 +961,22 @@ footer {
     font-size: 1.5rem;
   }
   .a-contenedor {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+    width: 95%;
+    padding: 2rem;
+    box-sizing: border-box;
+    
   }
-
-  .b-contenedor {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-
   .b-contenedor button {
-    height: 14rem;
-    width: 14rem;
+    height: 10rem;
+    width: 10rem;
     margin: 1rem;
   }
 
   .fa-brands {
-    font-size: 7rem;
+    font-size: 6rem;
   }
   .fa-solid {
-    font-size: 7rem;
+    font-size: 6rem;
   }
 
   /*media para la sección de la cita*/
@@ -1020,18 +1039,43 @@ footer {
     justify-content: center;
     align-items: center;
     background-color: rgb(230, 223, 223);
-    height: 60rem;
+    height: 55rem;
+  
   }
+  .caja_contacto_formulario{
+    width: 90%;
+    height: 52rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .caja_contactame{
+    width: 40%;
+    height:45rem ;
+    margin:0.5rem;
+   
+    
+  }
+  .caja_contactame p{
+    width: 90%;
+    
+
+
+  }
+  
+  
   /*Aquí el código del formulario de contacto*/
   .formulario {
+    margin: 0.5rem;
     width: 40%;
-    height: 50rem;
+    height: 45rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: white;
     border-radius: 1.5rem;
+    
   }
   .formulario h1 {
     font-size: 2rem;
@@ -1043,20 +1087,20 @@ footer {
   }
   .nombre_caja p,
   .mail_caja p {
-    font-size: 1.7rem;
+    font-size: 1.2rem;
   }
   .encabezado_mensaje {
-    font-size: 1.7rem;
+    font-size: 1.2rem;
   }
   .nombre_caja input,
   .mail_caja input {
-    width: 16rem;
+    width: 10rem;
   }
   .mail_caja input {
     margin-left: 1.3rem;
   }
   textarea {
-    width: 16rem;
+    width: 10rem;
     height: 10rem;
     margin-left: 1rem;
   }
